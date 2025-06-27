@@ -80,12 +80,21 @@ select {
   border: 1px solid rgba(212, 175, 55, 0.5);
   border-radius: var(--border-radius);
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--primary);
+  color: var(--light);
   font-size: 1rem;
   transition: var(--transition);
 }
 
-
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 20px;
+  padding-right: 40px !important;
+}
 
 input[type="number"]:focus,
 input[type="date"]:focus,
@@ -94,7 +103,11 @@ select:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3);
 }
-
+select option {
+  background-color: var(--primary);
+  color: var(--light);
+  width: auto;
+}
 button {
   width: 100%;
   padding: 14px;
@@ -187,5 +200,18 @@ button:active {
 
   .results p {
     flex-direction: column;
+  }
+
+  select {
+    font-size: 16px;
+    padding: 12px 15px !important;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  label {
+    font-size: 14px;
   }
 }

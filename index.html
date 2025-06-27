@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>MAXIM RESTAURANT - Commission Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,9 +19,9 @@
         <div class="form-group">
             <label for="waiters">Number of Waiters:</label>
             <select id="waiters" required>
-                <option value="0" style="color: rgb(156, 40, 40);"><span style="color: rgb(156, 40, 40);">0</span></option>
-                <option value="1"><span>1</span></option>
-                <option value="2"><span>2</span></option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
             </select>
         </div>
         
@@ -43,7 +43,7 @@
             <h5>Total Commission:</h5><p id="totalPercentage"><span></span> EGP</p>
             <h5>Captain's Share:</h5><p id="captainPercentage"><span></span> EGP</p>
             <h5 id="waiter1PercentageLabel" style="display:none;">One Waiter Share (30%):</h5><p id="waiter1Percentage" style="display:none;"><span></span> EGP</p>
-            <h5 id="waiter2PercentageLabel" style="display:none;"> Two Waiter Share (20%):</h5><p id="waiter2Percentage" style="display:none;"><span></span> EGP</p>
+            <h5 id="waiter2PercentageLabel" style="display:none;">Two Waiter Share (20%):</h5><p id="waiter2Percentage" style="display:none;"><span></span> EGP</p>
             <h5>Kitchen's Share (10%):</h5> <p id="kitchenPercentage"><span></span> EGP</p>
         </div>
         
