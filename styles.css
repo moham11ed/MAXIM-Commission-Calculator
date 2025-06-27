@@ -73,19 +73,23 @@ label {
 }
 
 input[type="number"],
-input[type="date"] {
+input[type="date"],
+select {
   width: 100%;
   padding: 12px 15px;
   border: 1px solid rgba(212, 175, 55, 0.5);
   border-radius: var(--border-radius);
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--light);
+  color: var(--primary);
   font-size: 1rem;
   transition: var(--transition);
 }
 
+
+
 input[type="number"]:focus,
-input[type="date"]:focus {
+input[type="date"]:focus,
+select:focus {
   outline: none;
   border-color: var(--primary);
   box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3);
@@ -136,6 +140,7 @@ button:active {
   font-weight: 700;
   color: var(--primary);
 }
+
 .footer {
     margin-top: 2rem;
     text-align: center;
@@ -157,7 +162,8 @@ button:active {
   }
 
   input[type="number"],
-  input[type="date"] {
+  input[type="date"],
+  select {
     padding: 10px 12px;
   }
 
